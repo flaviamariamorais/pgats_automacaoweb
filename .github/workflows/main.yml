@@ -1,0 +1,30 @@
+name: web E2E tests
+
+on:
+  workflow_dispatch:
+
+jobs:
+  web-tests:
+
+    runs-on: ubutun-latest
+
+    steps:
+    
+      # clone do projeto para a máquina
+      -uses: actions/checkout@v4
+
+      # Conferir a versao instalada
+      - name: Node version
+        run: Node --version
+
+      - name: instalando dependencias
+        run: npm install
+
+      - name: executando os testes
+        run: npx cypress run
+
+         
+
+        
+      
+ 
