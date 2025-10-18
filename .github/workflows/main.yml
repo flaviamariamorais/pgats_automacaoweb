@@ -6,7 +6,7 @@ on:
 jobs:
   web-tests:
 
-    runs-on: ubutun-latest
+    runs-on: ubuntun-latest
 
     steps:
     
